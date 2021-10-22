@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+</head>
+
+<body>
+    <style>
+        .box {
+            height: 250px;
+            width: 600px;
+            background-color:pink;
+            border-radius: 10%;
+            margin-right: 200px;
+            margin-left: 300px;
+            text-align:justify;
+        }
+    </style>
+    <div class="box">
+       
+            <header>
+                <form id="value">
+                    <input id="new" type='text' placeholder='New Item'>
+                    <input type='submit' value='Add to List'>
+                </form>
+            </header>
+            <ul id="List"></ul>
+            <footer>
+                <div class="par">
+                    <p>
+                        You have <span id="con">0</span> todos left.
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button id="clear">Clear List</button>
+                    <button id="clearCompleted">Clear Completed</button>
+                </div>
+            </footer>
+       
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./task05.js"></script>
+</body>
+
+</html>
