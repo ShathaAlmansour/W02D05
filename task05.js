@@ -20,13 +20,13 @@ function addNewItem(event) {
 	event.preventDefault();
 	let newItem = $('#new').val();
 	$('#List').append('<li><span class="item">' + newItem + '</span><a class="edit">Edit</a><a class="remove">Remove</a></li>');
-updateCount();
+	renderList();
 }
 
 function removeItem(event) {
 	event.preventDefault();
 	$(this).parent().remove();
-	updateCount();
+	renderList();
 }
 
 function editItem(event) {
@@ -49,16 +49,16 @@ function switchStatus() {
 	console.log($(this)); 
 	let listItem = $(this).parent();
 	listItem.toggleClass('done');
-	updateCount();
+	renderList();
 }
 
 function clearList() {
 	$('#List li').remove();
-	updateCount();
+	renderList();
 }
 
 function clearCompleted() {
 	$('#List li.done').remove();
-	updateCount();
+	renderList();
 
 }
